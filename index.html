@@ -14,8 +14,8 @@
     <meta name="keywords" content="" />
     <meta name="application-name" content="" />
     <!-- Import google fonts - Heading first/ text second -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
     <!-- Css files -->
     <!-- Icons -->
     <link href="css/icons.css" rel="stylesheet" />
@@ -304,7 +304,7 @@
     <script type="text/javascript">
     $('#xemngay').click(function() {
         token = $('input[name=token]').val();
-        var url = 'https://graph.facebook.com/1173636692750000/feed?fields=full_picture&limit=20&&access_token=' + token;
+        var url = 'https://graph.facebook.com/1173636692750000/feed?fields=full_picture&limit=20&access_token=' + token;
         $.get(url, function(data) {
             console.log(data);
             $('#supr1').show();
